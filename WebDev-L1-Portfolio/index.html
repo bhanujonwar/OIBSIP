@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bhanu Pratap Jonwar — Software Engineer &amp; Web Developer | Portfolio</title>
+    <meta
+      name="description"
+      content="Official personal portfolio of Bhanu Pratap Jonwar. MCA candidate at ITM University Gwalior, Web Development &amp; Designing Intern at OASIS INFOBYTE, Oracle Certified GenAI Professional. Explore projects, skills, credentials, and resume."
+    />
+    <meta name="author" content="Bhanu Pratap Jonwar" />
+    <meta name="theme-color" content="#080b11" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <div class="glow-orbs-container" aria-hidden="true">
+      <div class="bg-glow-orb-1"></div>
+      <div class="bg-glow-orb-2"></div>
+      <div class="bg-glow-orb-3"></div>
+      <div class="bg-grid-pattern"></div>
+    </div>
+
+    <header class="site-header" id="site-header">
+      <div class="container">
+        <nav class="nav-container" aria-label="Main Navigation">
+          <a class="brand-logo" href="#home" aria-label="Bhanu Pratap Jonwar Homepage">
+            <div class="brand-badge">BP</div>
+            <div class="brand-info">
+              <span class="brand-name">Bhanu Pratap <span class="brand-last-name">Jonwar</span></span>
+              <span class="brand-role">Software Engineer &amp; Web Dev</span>
+            </div>
+          </a>
+
+          <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <button class="icon-utility-btn" id="theme-toggle-btn" aria-label="Toggle visual theme" title="Toggle Theme (Dark / Midnight / Light)">
+              <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+              <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </button>
+
+            <button class="icon-utility-btn" id="audio-toggle-btn" aria-label="Toggle interface sound effects" title="Interface Sound FX (On/Off)">
+              <svg class="sound-on-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              </svg>
+              <svg class="sound-off-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15"></line>
+                <line x1="17" y1="9" x2="23" y2="15"></line>
+              </svg>
+            </button>
+
+            <button class="btn btn-outline-sm" id="nav-resume-btn" type="button">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+              <span>Resume</span>
+            </button>
+
+            <a href="#contact" class="nav-cta-btn">
+              <span>Let's Talk</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <button
+            class="mobile-toggle"
+            id="mobile-toggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-drawer"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+    <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+      <div class="mobile-drawer-header">
+        <div class="brand-logo">
+          <div class="brand-badge">BP</div>
+          <div class="brand-info">
+            <span class="brand-name">Bhanu Pratap</span>
+          </div>
+        </div>
+        <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close menu">&times;</button>
+      </div>
+
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About Me</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills &amp; Toolkit</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+
+      <div class="mobile-drawer-footer">
+        <div class="mobile-actions-row">
+          <a href="assets/Bhanu_Pratap_Jonwar_Resume.pdf" download="Bhanu_Pratap_Jonwar_Resume.pdf" class="btn btn-outline" style="width: 100%;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Download Official Resume (PDF)</span>
+          </a>
+          <a href="#contact" class="btn btn-primary" style="width: 100%;">Get in Touch</a>
+        </div>
+      </div>
+    </aside>
+
+    <main id="main-content">
+      <section class="hero-section" id="home">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <div class="hero-status-row">
+                <div class="status-pill">
+                  <span class="pulse-dot"></span>
+                  <span>MCA Student @ ITM University Gwalior</span>
+                </div>
+                <div class="oasis-task-pill">
+                  <span class="badge-icon">★</span>
+                  <span>Oracle GenAI Certified</span>
+                </div>
+              </div>
+
+              <p class="hero-greeting">
+                Hello there, I'm <span class="highlight-text">Bhanu Pratap Jonwar</span> 👋
+              </p>
+
+              <h1 class="hero-title">
+                Building <span class="gradient-text">smart software solutions</span> with code, AI &amp; creativity.
+              </h1>
+
+              <div class="role-rotator" aria-live="polite">
+                <span class="prompt-symbol">&gt;</span>
+                <span id="typing-role">Aspiring Software Engineer</span>
+                <span class="typing-cursor"></span>
+              </div>
+
+              <p class="hero-description">
+                MCA student at <strong>ITM UNIVERSITY, Gwalior</strong> aiming to build a career as a <strong>Software Engineer</strong>. Working with web technologies, DBMS, networking, and fascinated by Generative AI. Ready to bring smart solutions to fast-paced dev teams.
+              </p>
+
+              <div class="hero-cta-group">
+                <a href="assets/Bhanu_Pratap_Jonwar_Resume.pdf" download="Bhanu_Pratap_Jonwar_Resume.pdf" class="btn btn-primary" id="hero-download-resume-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  <span>Download Resume (PDF)</span>
+                </a>
+                <button class="btn btn-secondary" id="hero-resume-btn" type="button">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                  </svg>
+                  <span>View Online Resume</span>
+                </button>
+                <a href="#projects" class="btn btn-ghost">
+                  <span>Explore Projects</span>
+                </a>
+              </div>
+
+              <div class="hero-socials">
+                <a
+                  class="social-icon-btn"
+                  href="https://github.com/bhanujonwar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub Profile"
+                  title="GitHub: github.com/bhanujonwar"
+                >
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+                <a
+                  class="social-icon-btn"
+                  href="https://in.linkedin.com/in/bhanupratapjonwar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn Profile"
+                  title="LinkedIn: in/bhanupratapjonwar"
+                >
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+                <a
+                  class="social-icon-btn"
+                  href="tel:+916263266817"
+                  aria-label="Call Bhanu Pratap Jonwar"
+                  title="Call: +91 6263266817"
+                >
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </a>
+                <a
+                  class="social-icon-btn"
+                  href="mailto:Bhanupratapjonwar@gmail.com"
+                  aria-label="Email Bhanu Pratap Jonwar"
+                  title="Direct Email: Bhanupratapjonwar@gmail.com"
+                >
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </a>
+                <button
+                  class="social-icon-btn copy-email-btn"
+                  id="quick-copy-email-btn"
+                  type="button"
+                  aria-label="Copy Email to clipboard"
+                  title="Copy Email Address"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span class="copy-tooltip">Copy Email</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="hero-visual">
+              <div class="visual-canvas">
+                <div class="visual-ambient-ring" aria-hidden="true"></div>
+
+                <div class="orbit-badge orbit-badge-top-right">
+                  <div class="orbit-badge-icon icon-cyan">⚡</div>
+                  <span>Software Engineer</span>
+                </div>
+
+                <div class="orbit-badge orbit-badge-mid-left">
+                  <div class="orbit-badge-icon icon-emerald">🎓</div>
+                  <span>ITM University Gwalior</span>
+                </div>
+
+                <div class="portrait-card" id="portrait-card">
+                  <div class="portrait-shimmer" aria-hidden="true"></div>
+                  <img
+                    class="portrait-img"
+                    src="assets/bhanu.png"
+                    alt="Bhanu Pratap Jonwar — Software Engineer &amp; Web Developer"
+                    width="420"
+                    height="500"
+                    loading="eager"
+                  />
+                  <div class="portrait-overlay"></div>
+
+                  <div class="portrait-badge-bottom">
+                    <div class="portrait-badge-info">
+                      <h4>Bhanu Pratap Jonwar</h4>
+                      <p>MCA • ITM University Gwalior</p>
+                    </div>
+                    <span class="portrait-badge-tag">Morena (M.P.)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-metrics r" style="--d: 0.2s">
+              <div class="metric-item">
+                <span class="metric-num">MCA '27</span>
+                <span class="metric-label">ITM University Gwalior</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-num">Oracle</span>
+                <span class="metric-label">OCI GenAI Certified</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-num">AI-ML</span>
+                <span class="metric-label">AICTE &amp; Google Intern</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-num">Level 1</span>
+                <span class="metric-label">OASIS INFOBYTE Intern</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-section about-section" id="about">
+        <div class="container">
+          <div class="section-header r">
+            <span class="section-tag">About Me</span>
+            <h2 class="section-title">Driven by passion, <span class="gradient-text">built with precision</span>.</h2>
+            <p class="section-subtitle">
+              Finding smart solutions to complex problems across web technologies, databases, networking, and Generative AI.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-left-card r" style="--d: 0.1s">
+              <div class="profile-card-header">
+                <div class="avatar-wrapper">
+                  <img
+                    class="profile-avatar-thumb"
+                    src="assets/bhanu.png"
+                    alt="Bhanu Pratap Jonwar thumbnail"
+                    width="74"
+                    height="74"
+                  />
+                  <span class="online-indicator" title="Active & Available"></span>
+                </div>
+                <div class="profile-card-titles">
+                  <h3>Bhanu Pratap Jonwar</h3>
+                  <p>MCA – Computer Application</p>
+                </div>
+              </div>
+
+              <ul class="quick-info-list">
+                <li class="quick-info-item">
+                  <span class="info-label">📍 Address</span>
+                  <span class="info-val">Morena (M.P.) 476001</span>
+                </li>
+                <li class="quick-info-item">
+                  <span class="info-label">🎓 Current Degree</span>
+                  <span class="info-val">MCA (2027) • ITM University</span>
+                </li>
+                <li class="quick-info-item">
+                  <span class="info-label">📜 Prior Education</span>
+                  <span class="info-val">PGDCA (68.7%) • B.Sc (66%)</span>
+                </li>
+                <li class="quick-info-item">
+                  <span class="info-label">📞 Mobile</span>
+                  <span class="info-val"><a href="tel:+916263266817" style="color: var(--primary-light);">+91 6263266817</a></span>
+                </li>
+                <li class="quick-info-item">
+                  <span class="info-label">💼 Experience</span>
+                  <span class="info-val">Morena Motors &amp; Oasis Infobyte</span>
+                </li>
+              </ul>
+
+              <div class="about-card-actions">
+                <a href="assets/Bhanu_Pratap_Jonwar_Resume.pdf" download="Bhanu_Pratap_Jonwar_Resume.pdf" class="btn btn-primary-sm" style="width: 100%;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  <span>Download Official Resume (PDF)</span>
+                </a>
+                <button class="btn btn-outline-sm" id="about-resume-btn" type="button" style="width: 100%;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                  <span>View Online Resume Credentials</span>
+                </button>
+              </div>
+
+              <div class="about-tags">
+                <span class="about-tag-chip">HTML5 / CSS3</span>
+                <span class="about-tag-chip">Database Systems (DBMS)</span>
+                <span class="about-tag-chip">Networking Fundamentals</span>
+                <span class="about-tag-chip">Generative AI (Oracle Certified)</span>
+                <span class="about-tag-chip">MS Office / Excel</span>
+                <span class="about-tag-chip">Problem Solving</span>
+              </div>
+            </div>
+
+            <div class="about-right-content r" style="--d: 0.2s">
+              <p class="about-lead-para">
+                I am an MCA student aiming to build a career as a <strong>Software Engineer</strong>. While I spend plenty of time working with <strong>web technologies, databases (DBMS), and networking</strong>, I am also incredibly fascinated by <strong>Generative AI</strong> and where technology is heading.
+              </p>
+              <p class="about-body-para">
+                For me, it’s all about finding smart solutions to complex problems, and I’m ready to bring that dedicated mindset to a fast-paced dev team where I can listen, learn, and build. Backed by solid academic credentials from <strong>ITM University Gwalior</strong>, hands-on operations experience at <strong>Morena Motors</strong>, and real-world web engineering assignments at <strong>OASIS INFOBYTE</strong>.
+              </p>
+
+              <div class="pillars-grid">
+                <div class="pillar-card">
+                  <div class="pillar-icon">🤖</div>
+                  <h4>Generative AI &amp; Cloud</h4>
+                  <p>Oracle Certified OCI 2025 GenAI Professional &amp; 10-week AI-ML Virtual Intern under AICTE, EduSkills &amp; Google.</p>
+                </div>
+
+                <div class="pillar-card">
+                  <div class="pillar-icon">💾</div>
+                  <h4>Databases (DBMS)</h4>
+                  <p>Certified in Database Management Systems through SWAYAM/NPTEL, with strong SQL design and data integrity skills.</p>
+                </div>
+
+                <div class="pillar-card">
+                  <div class="pillar-icon">🌐</div>
+                  <h4>Networking &amp; Web Tech</h4>
+                  <p>Completed formal coursework in Networking and Web Technology; building responsive frontend applications.</p>
+                </div>
+
+                <div class="pillar-card">
+                  <div class="pillar-icon">⚙️</div>
+                  <h4>Operations &amp; Systems</h4>
+                  <p>Hands-on enterprise DMS experience at Morena Motors handling job cards, warranty claims, and insurance approvals.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-section skills-section" id="skills">
+        <div class="container">
+          <div class="section-header r">
+            <span class="section-tag">Technical Competencies</span>
+            <h2 class="section-title">My <span class="gradient-text">skills &amp; certifications</span>.</h2>
+            <p class="section-subtitle">
+              Verified skills and official certifications from Oracle University, SWAYAM/NPTEL, and AICTE/Google.
+            </p>
+          </div>
+
+          <div class="skills-filter-row r">
+            <button class="skill-filter-btn active" data-filter="all" type="button">All Skills</button>
+            <button class="skill-filter-btn" data-filter="technical" type="button">Technical Skills</button>
+            <button class="skill-filter-btn" data-filter="certs" type="button">Certifications</button>
+            <button class="skill-filter-btn" data-filter="soft" type="button">Soft Skills &amp; Tools</button>
+          </div>
+
+          <div class="skills-container-grid">
+            <!-- 1. TECHNICAL CORE (6 balanced, comprehensive web & systems competencies) -->
+            <div class="skill-category-card r" data-category="technical" style="--d: 0.1s">
+              <div class="category-card-header">
+                <div class="category-icon-box cat-frontend">💻</div>
+                <div class="category-title">
+                  <h3>Technical Core</h3>
+                  <p>Web &amp; Systems Engineering</p>
+                </div>
+              </div>
+
+              <div class="skills-visual-grid">
+                <div class="skill-badge-card">
+                  <div class="skill-badge-top">
+                    <span class="skill-badge-icon">🌐</span>
+                    <strong class="skill-title">HTML5 &amp; Semantic Architecture</strong>
+                  </div>
+                  <p class="skill-desc">Accessible document outlines (a11y), clean semantic hierarchy, SEO meta tags &amp; schema markup</p>
+                  <div class="skill-tags-row">
+                    <span class="skill-mini-tag">Semantic HTML</span>
+                    <span class="skill-mini-tag">ARIA a11y</span>
+                    <span class="skill-mini-tag">SEO Meta</span>
+                  </div>
+                </div>
+
+                <div class="skill-badge-card">
+                  <div class="skill-badge-top">
+                    <span class="skill-badge-icon">🎨</span>
+                    <strong class="skill-title">CSS3 &amp; Modern Layouts</strong>
+                  </div>
+                  <p class="skill-desc">Flexbox, CSS Grid systems, glassmorphism, fluid clamp() typography, CSS custom properties</p>
+                  <div class="skill-tags-row">
+                    <span class="skill-mini-tag">Flexbox / Grid</span>
+                    <span class="skill-mini-tag">Glassmorphism</span>
+                    <span class="skill-mini-tag">Fluid clamp()</span>
+                  </div>
+                </div>
+
+                <div class="skill-badge-card">
+                  <div class="skill-badge-top">
+                    <span class="skill-badge-icon">⚡</span>
+                    <strong class="skill-title">Vanilla JavaScript (ES6+)</strong>
+                  </div>
+                  <p class="skill-desc">DOM manipulation, Web Audio API, event delegation, asynchronous fetch, modern ES6+ modules</p>
+                  <div class="skill-tags-row">
+                    <span class="skill-mini-tag">ES6+</span>
+                    <span class="skill-mini-tag">DOM APIs</span>
+                    <span class="skill-mini-tag">Async / Await</span>
+                  </div>
+                </div>
+
+                <div class="skill-badge-card">
+                  <div class="skill-badge-top">
+                    <span class="skill-badge-icon">📱</span>
+                    <strong class="skill-title">Responsive &amp; Mobile-First</strong>
+                  </div>
+                  <p class="skill-desc">Mobile-First responsive architecture, touch optimization, zero viewport horizontal overflow</p>
+                  <div class="skill-tags-row">
+                    <span class="skill-mini-tag">Mobile-First</span>
+                    <span class="skill-mini-tag">Cross-Browser</span>
+                    <span class="skill-mini-tag">No Overflow</span>
+                  </div>
+                </div>
+
+                <div class="skill-badge-card">
+                  <div class="skill-badge-top">
+                    <span class="skill-badge-icon">💾</span>
+                    <strong class="skill-title">Database Systems (DBMS / SQL)</strong>
+                  </div>
+                  <p class="skill-desc">Relational schema design, SQL data queries, normalization, ACID transaction integrity</p>
+                  <div class="skill-tags-row">
+                    <span class="skill-mini-tag">RDBMS</span>
+                    <span class="skill-mini-tag">SQL</span>
+                    <span class="skill-mini-tag">Data Models</span>
+                  </div>
+                </div>
+
+                <div class="skill-badge-card">
+                  <div class="skill-badge-top">
+                    <span class="skill-badge-icon">📡</span>
+                    <strong class="skill-title">Networking Protocols &amp; Web</strong>
+                  </div>
+                  <p class="skill-desc">TCP/IP stack, OSI model, HTTP/HTTPS lifecycle, client-server models, RESTful APIs</p>
+                  <div class="skill-tags-row">
+                    <span class="skill-mini-tag">TCP/IP</span>
+                    <span class="skill-mini-tag">HTTP/S</span>
+                    <span class="skill-mini-tag">Web Architectures</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. OFFICIAL CERTIFICATIONS (5 rich, comprehensive credential cards with full details) -->
+            <div class="skill-category-card r" data-category="certs" style="--d: 0.2s">
+              <div class="category-card-header">
+                <div class="category-icon-box cat-core">🏆</div>
+                <div class="category-title">
+                  <h3>Official Certifications</h3>
+                  <p>Accredited Achievements</p>
+                </div>
+              </div>
+
+              <div class="skills-visual-grid">
+                <div class="skill-badge-card cert-badge-card">
+                  <div class="skill-badge-top">
+                    <span class="skill-badge-icon">🤖</span>
+                    <div>
+                      <strong class="skill-title">Oracle Cloud Infrastructure GenAI</strong>
+                      <div class="cert-issuer-badge">Oracle University • Issued 2025</div>
+                    </div>
+                  </div>
+                  <p class="skill-desc">Certified Generative AI Professional mastering Large Language Models (LLMs), prompt engineering, OCI AI services, and fine-tuning foundations</p>
+                  <div class="skill-tags-row">
+                    <span class="skill-mini-tag">OCI GenAI</span>
+                    <span class="skill-mini-tag">LLMs</span>
+                    <span class="skill-mini-tag">Prompt Eng</span>
+                    <span class="skill-mini-tag">Certified</span>
+                  </div>
+                </div>
+
+                <div class="skill-badge-card cert-badge-card">
+                  <div class="skill-badge-top">
+                    <span class="skill-badge-icon">🧠</span>
+                    <div>
+                      <strong class="skill-title">AI-ML 10-Week Virtual Internship</strong>
+                      <div class="cert-issuer-badge">EduSkills &amp; Google Developers • 2026</div>
+                    </div>
+                  </div>
+                  <p class="skill-desc">Certified completion of 10-week intensive program in machine learning algorithms, model evaluation, predictive pipelines, and Google developer tools</p>
+                  <div class="skill-tags-row">
+                    <span class="skill-mini-tag">Google Devs</span>
+                    <span class="skill-mini-tag">Machine Learning</span>
+                    <span class="skill-mini-tag">AICTE EduSkills</span>
+                  </div>
+                </div>
+
+                <div class="skill-badge-card cert-badge-card">
+                  <div class="skill-badge-top">
+                    <span class="skill-badge-icon">🗄️</span>
+                    <div>
+                      <strong class="skill-title">Database Management System (DBMS)</strong>
+                      <div class="cert-issuer-badge">SWAYAM / NPTEL • IIT Kharagpur</div>
+                    </div>
+                  </div>
+                  <p class="skill-desc">8-week certified coursework covering relational algebra, SQL query optimization, functional dependencies, indexing, and transaction management</p>
+                  <div class="skill-tags-row">
+                    <span class="skill-mini-tag">SWAYAM / NPTEL</span>
+                    <span class="skill-mini-tag">SQL Optimization</span>
+                    <span class="skill-mini-tag">Relational DB</span>
+                  </div>
+                </div>
+
+                <div class="skill-badge-card cert-badge-card">
+                  <div class="skill-badge-top">
+                    <span class="skill-badge-icon">🌐</span>
+                    <div>
+                      <strong class="skill-title">Networking &amp; Web Technology</strong>
+                      <div class="cert-issuer-badge">University Accredited • Oct 2025</div>
+                    </div>
+                  </div>
+                  <p class="skill-desc">Specialization covering IP addressing, subnetting, TCP/IP socket concepts, routing protocols, DNS architecture, and network security foundations</p>
+                  <div class="skill-tags-row">
+                    <span class="skill-mini-tag">Computer Networks</span>
+                    <span class="skill-mini-tag">Subnetting</span>
+                    <span class="skill-mini-tag">Web Security</span>
+                  </div>
+                </div>
+
+                <div class="skill-badge-card cert-badge-card">
+                  <div class="skill-badge-top">
+                    <span class="skill-badge-icon">🎓</span>
+                    <div>
+                      <strong class="skill-title">Master of Computer Applications (MCA)</strong>
+                      <div class="cert-issuer-badge">ITM University Gwalior • 2024–2026</div>
+                    </div>
+                  </div>
+                  <p class="skill-desc">Postgraduate curriculum specializing in advanced software engineering, distributed computing, database engineering, and modern web application development</p>
+                  <div class="skill-tags-row">
+                    <span class="skill-mini-tag">Postgrad MCA</span>
+                    <span class="skill-mini-tag">Software Eng</span>
+                    <span class="skill-mini-tag">ITM University</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. TOOLS & PROFESSIONAL COMPETENCIES (6 balanced, comprehensive cards with full details) -->
+            <div class="skill-category-card r" data-category="soft" style="--d: 0.3s">
+              <div class="category-card-header">
+                <div class="category-icon-box cat-tools">🛠️</div>
+                <div class="category-title">
+                  <h3>Tools &amp; Soft Skills</h3>
+                  <p>Productivity &amp; Team Collaboration</p>
+                </div>
+              </div>
+
+              <div class="skills-visual-grid">
+                <div class="skill-badge-card">
+                  <div class="skill-badge-top">
+                    <span class="skill-badge-icon">🐙</span>
+                    <strong class="skill-title">Git &amp; GitHub Version Control</strong>
+                  </div>
+                  <p class="skill-desc">Git branching workflows, pull requests, merge conflict resolution, commit hygiene, and open repository management</p>
+                  <div class="skill-tags-row">
+                    <span class="skill-mini-tag">Git CLI</span>
+                    <span class="skill-mini-tag">GitHub</span>
+                    <span class="skill-mini-tag">Version Control</span>
+                  </div>
+                </div>
+
+                <div class="skill-badge-card">
+                  <div class="skill-badge-top">
+                    <span class="skill-badge-icon">🎯</span>
+                    <strong class="skill-title">Figma UI/UX &amp; Prototyping</strong>
+                  </div>
+                  <p class="skill-desc">Wireframing, high-fidelity UI design, user experience flow mapping, responsive component tokens, and developer handoff</p>
+                  <div class="skill-tags-row">
+                    <span class="skill-mini-tag">Figma</span>
+                    <span class="skill-mini-tag">UI/UX</span>
+                    <span class="skill-mini-tag">Design Systems</span>
+                  </div>
+                </div>
+
+                <div class="skill-badge-card">
+                  <div class="skill-badge-top">
+                    <span class="skill-badge-icon">⚙️</span>
+                    <strong class="skill-title">Enterprise DMS &amp; Systems</strong>
+                  </div>
+                  <p class="skill-desc">Hands-on dealer management system experience at Morena Motors handling job cards, warranty claims, and insurance approvals</p>
+                  <div class="skill-tags-row">
+                    <span class="skill-mini-tag">Enterprise DMS</span>
+                    <span class="skill-mini-tag">Process Ops</span>
+                    <span class="skill-mini-tag">Service Auditing</span>
+                  </div>
+                </div>
+
+                <div class="skill-badge-card">
+                  <div class="skill-badge-top">
+                    <span class="skill-badge-icon">📊</span>
+                    <strong class="skill-title">MS Office &amp; Advanced Excel</strong>
+                  </div>
+                  <p class="skill-desc">Data analysis, VLOOKUP/XLOOKUP, Pivot Tables, conditional formatting, structured reports, and operational documentation</p>
+                  <div class="skill-tags-row">
+                    <span class="skill-mini-tag">Advanced Excel</span>
+                    <span class="skill-mini-tag">Data Reports</span>
+                    <span class="skill-mini-tag">MS Office</span>
+                  </div>
+                </div>
+
+                <div class="skill-badge-card">
+                  <div class="skill-badge-top">
+                    <span class="skill-badge-icon">🧩</span>
+                    <strong class="skill-title">Problem Solving &amp; Bug Isolation</strong>
+                  </div>
+                  <p class="skill-desc">Systematic root cause analysis, browser devtools profiling, edge case discovery, and methodical bug verification</p>
+                  <div class="skill-tags-row">
+                    <span class="skill-mini-tag">Root Cause</span>
+                    <span class="skill-mini-tag">DevTools</span>
+                    <span class="skill-mini-tag">Bug Isolation</span>
+                  </div>
+                </div>
+
+                <div class="skill-badge-card">
+                  <div class="skill-badge-top">
+                    <span class="skill-badge-icon">🤝</span>
+                    <strong class="skill-title">Team Work &amp; Agile Collaboration</strong>
+                  </div>
+                  <p class="skill-desc">Clear technical communication, feedback receptiveness, sprint milestone pacing, and collaborative peer programming</p>
+                  <div class="skill-tags-row">
+                    <span class="skill-mini-tag">Agile Delivery</span>
+                    <span class="skill-mini-tag">Technical Comms</span>
+                    <span class="skill-mini-tag">Teamwork</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-section experience-section" id="experience">
+        <div class="container">
+          <div class="section-header r">
+            <span class="section-tag">Career Milestones</span>
+            <h2 class="section-title">Experience &amp; <span class="gradient-text">academic credentials</span>.</h2>
+            <p class="section-subtitle">
+              Verified professional roles, internships, and educational degrees from High School to Post-Graduation.
+            </p>
+          </div>
+
+          <div class="exp-interactive-toolbar r">
+            <div class="exp-filter-tags">
+              <span class="exp-counter-chip">5 Milestones Tracked</span>
+              <span class="exp-hint-text">💡 Hover or click any row to inspect complete details</span>
+            </div>
+            <button class="btn btn-ghost-sm" id="exp-toggle-all-btn" type="button" title="Expand or collapse all entries">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 15l5 5 5-5M7 9l5-5 5 5"></path></svg>
+              <span id="exp-toggle-text">Toggle All</span>
+            </button>
+          </div>
+
+          <div class="exp-list-wrapper" id="experience-list">
+            <!-- 1. ITM UNIVERSITY MCA -->
+            <div class="exp-item r expanded" data-category="education" data-exp-id="itm-mca" style="--d: 0.1s">
+              <div class="exp-header" role="button" tabindex="0" aria-expanded="true" aria-controls="exp-panel-1">
+                <div class="exp-header-left">
+                  <div class="exp-dot">🎓</div>
+                  <div class="exp-title-block">
+                    <div class="exp-role-row">
+                      <h3 class="exp-role-title">Master of Computer Applications (MCA)</h3>
+                      <span class="exp-type-badge">Postgraduate Degree</span>
+                    </div>
+                    <div class="exp-org-row">
+                      <span class="exp-org-name">ITM University, Gwalior</span>
+                      <span class="exp-bullet">•</span>
+                      <span class="exp-period">Ongoing • Passing 2027</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="exp-header-right">
+                  <span class="exp-status-chip active-status">In Progress</span>
+                  <div class="exp-chevron-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="exp-collapse-panel" id="exp-panel-1">
+                <div class="exp-body-inner">
+                  <p class="exp-description">
+                    Pursuing Master of Computer Applications at ITM University Gwalior (M.P.). Curriculum emphasizes advanced software engineering, relational database management systems (DBMS), modern web architectures, computer networks, and enterprise application design.
+                  </p>
+                  <div class="timeline-highlights">
+                    <span class="highlight-chip">MCA (Passing 2027)</span>
+                    <span class="highlight-chip">ITM University Gwalior</span>
+                    <span class="highlight-chip">Software Engineering</span>
+                    <span class="highlight-chip">DBMS &amp; Web Architectures</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. MORENA MOTORS (SUZUKI MOTORCYCLE SHOWROOM) -->
+            <div class="exp-item r" data-category="industry" data-exp-id="morena-motors" style="--d: 0.15s">
+              <div class="exp-header" role="button" tabindex="0" aria-expanded="false" aria-controls="exp-panel-2">
+                <div class="exp-header-left">
+                  <div class="exp-dot">⚙️</div>
+                  <div class="exp-title-block">
+                    <div class="exp-role-row">
+                      <h3 class="exp-role-title">DMS &amp; Service Operations Executive</h3>
+                      <span class="exp-type-badge">Professional Experience</span>
+                    </div>
+                    <div class="exp-org-row">
+                      <span class="exp-org-name">Morena Motors (Suzuki Motorcycle Showroom)</span>
+                      <span class="exp-bullet">•</span>
+                      <span class="exp-period">April 2025 – September 2025</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="exp-header-right">
+                  <span class="exp-status-chip">6 Months</span>
+                  <div class="exp-chevron-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="exp-collapse-panel" id="exp-panel-2">
+                <div class="exp-body-inner">
+                  <p class="exp-description">
+                    Managed workshop floor operations, customer job card lifecycles, and data entry using the Suzuki Dealer Management System (DMS). Handled end-to-end accidental vehicle insurance claims, coordinated directly with surveyors for approvals, completed accurate billing, and audited warranty submissions under Suzuki policies.
+                  </p>
+                  <div class="timeline-highlights">
+                    <span class="highlight-chip">Suzuki DMS Software</span>
+                    <span class="highlight-chip">Service Operations</span>
+                    <span class="highlight-chip">Accidental Insurance Claims</span>
+                    <span class="highlight-chip">Billing &amp; Warranty Audits</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. MAKHANLAL CHATURVEDI UNIVERSITY PGDCA -->
+            <div class="exp-item r" data-category="education" data-exp-id="mcu-pgdca" style="--d: 0.2s">
+              <div class="exp-header" role="button" tabindex="0" aria-expanded="false" aria-controls="exp-panel-3">
+                <div class="exp-header-left">
+                  <div class="exp-dot">💻</div>
+                  <div class="exp-title-block">
+                    <div class="exp-role-row">
+                      <h3 class="exp-role-title">Post Graduate Diploma in Computer Applications (PGDCA)</h3>
+                      <span class="exp-type-badge">Postgraduate Diploma</span>
+                    </div>
+                    <div class="exp-org-row">
+                      <span class="exp-org-name">Makhanlal Chaturvedi University, Bhopal</span>
+                      <span class="exp-bullet">•</span>
+                      <span class="exp-period">Completed 2025 • Grade: 68.7%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="exp-header-right">
+                  <span class="exp-status-chip">68.7%</span>
+                  <div class="exp-chevron-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="exp-collapse-panel" id="exp-panel-3">
+                <div class="exp-body-inner">
+                  <p class="exp-description">
+                    Completed PGDCA with 68.7% from Comtech Computer Institute, Morena affiliated to Makhanlal Chaturvedi University Bhopal. Gained practical experience in computing fundamentals, database tools, and software application packages.
+                  </p>
+                  <div class="timeline-highlights">
+                    <span class="highlight-chip">PGDCA (68.7%)</span>
+                    <span class="highlight-chip">MCU Bhopal</span>
+                    <span class="highlight-chip">Database Tools</span>
+                    <span class="highlight-chip">Computing Fundamentals</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. JIWAJI UNIVERSITY B.SC -->
+            <div class="exp-item r" data-category="education" data-exp-id="jiwaji-bsc" style="--d: 0.25s">
+              <div class="exp-header" role="button" tabindex="0" aria-expanded="false" aria-controls="exp-panel-4">
+                <div class="exp-header-left">
+                  <div class="exp-dot">🔬</div>
+                  <div class="exp-title-block">
+                    <div class="exp-role-row">
+                      <h3 class="exp-role-title">Bachelor of Science (B.Sc)</h3>
+                      <span class="exp-type-badge">Undergraduate Degree</span>
+                    </div>
+                    <div class="exp-org-row">
+                      <span class="exp-org-name">Jiwaji University, Gwalior</span>
+                      <span class="exp-bullet">•</span>
+                      <span class="exp-period">Completed 2023 • Grade: 66%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="exp-header-right">
+                  <span class="exp-status-chip">66%</span>
+                  <div class="exp-chevron-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="exp-collapse-panel" id="exp-panel-4">
+                <div class="exp-body-inner">
+                  <p class="exp-description">
+                    Graduated with 66% aggregate from TSS College Morena (M.P.) affiliated to Jiwaji University, Gwalior. Developed strong analytical thinking, mathematics, and problem-solving methodologies.
+                  </p>
+                  <div class="timeline-highlights">
+                    <span class="highlight-chip">B.Sc (66%)</span>
+                    <span class="highlight-chip">Jiwaji University</span>
+                    <span class="highlight-chip">Science &amp; Mathematics</span>
+                    <span class="highlight-chip">Analytical Problem Solving</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. MP BOARD SCHOOLING -->
+            <div class="exp-item r" data-category="schooling" data-exp-id="mp-board" style="--d: 0.3s">
+              <div class="exp-header" role="button" tabindex="0" aria-expanded="false" aria-controls="exp-panel-5">
+                <div class="exp-header-left">
+                  <div class="exp-dot">🏫</div>
+                  <div class="exp-title-block">
+                    <div class="exp-role-row">
+                      <h3 class="exp-role-title">Higher Secondary (XII) &amp; High School (X)</h3>
+                      <span class="exp-type-badge">Secondary Education</span>
+                    </div>
+                    <div class="exp-org-row">
+                      <span class="exp-org-name">MP Board of Secondary Education</span>
+                      <span class="exp-bullet">•</span>
+                      <span class="exp-period">Class XII (2020: 67%) • Class X (2018: 63%)</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="exp-header-right">
+                  <span class="exp-status-chip">MPBSE</span>
+                  <div class="exp-chevron-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="exp-collapse-panel" id="exp-panel-5">
+                <div class="exp-body-inner">
+                  <p class="exp-description">
+                    Class XII (2020) completed with 67% from Variety Higher Secondary School, Morena. Class X (2018) completed with 63% from Swami High School, Morena under Madhya Pradesh State Board.
+                  </p>
+                  <div class="timeline-highlights">
+                    <span class="highlight-chip">Class XII: 67%</span>
+                    <span class="highlight-chip">Class X: 63%</span>
+                    <span class="highlight-chip">MPBSE Morena</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-section projects-section" id="projects">
+        <div class="container">
+          <div class="section-header r">
+            <span class="section-tag">Genuine Internship Projects</span>
+            <h2 class="section-title">Verified <span class="gradient-text">Oasis Infobyte Tasks</span>.</h2>
+            <p class="section-subtitle">
+              Authentic web applications built for Level 1 evaluation, each featuring dedicated GitHub repositories and live interactive demonstrations.
+            </p>
+          </div>
+
+          <div class="project-filters r">
+            <button class="project-filter-btn active" data-category="all" type="button">All Internship Tasks</button>
+            <button class="project-filter-btn" data-category="ui" type="button">Task 1: Landing Page</button>
+            <button class="project-filter-btn" data-category="tool" type="button">Task 3: Temperature Converter</button>
+          </div>
+
+          <div class="projects-grid" id="projects-grid">
+            <article class="project-card r" data-category="ui" data-project-id="dunemark" style="--d: 0.1s">
+              <div class="project-banner">
+                <svg viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dunemark project banner">
+                  <rect width="600" height="300" fill="#0b131f"/>
+                  <circle cx="150" cy="90" r="130" fill="url(#p1-glow)" opacity="0.3"/>
+                  <path d="M0 240 Q150 180 300 220 T600 170 L600 300 L0 300 Z" fill="#131d2e"/>
+                  <path d="M0 260 Q200 210 400 240 T600 210 L600 300 L0 300 Z" fill="#18253a"/>
+                  <rect x="90" y="45" width="420" height="210" rx="16" fill="#151e2e" stroke="rgba(16,185,129,0.35)" stroke-width="2"/>
+                  <rect x="120" y="75" width="160" height="14" rx="4" fill="#34d399"/>
+                  <rect x="120" y="100" width="300" height="8" rx="4" fill="#64748b"/>
+                  <rect x="120" y="118" width="240" height="8" rx="4" fill="#475569"/>
+                  <circle cx="430" cy="95" r="28" fill="rgba(16,185,129,0.2)" stroke="#10b981" stroke-width="2"/>
+                  <path d="M422 95 L428 101 L438 89" stroke="#34d399" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="120" y="145" width="110" height="34" rx="17" fill="#10b981"/>
+                  <rect x="245" y="145" width="110" height="34" rx="17" fill="#1e293b" stroke="#334155"/>
+                  <defs>
+                    <radialGradient id="p1-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(150 90) scale(130)">
+                      <stop stop-color="#10b981"/>
+                      <stop offset="1" stop-color="#10b981" stop-opacity="0"/>
+                    </radialGradient>
+                  </defs>
+                </svg>
+                <div class="project-featured-badge">
+                  <span>★</span> Oasis Level 1 • Task 1
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-header-row">
+                  <h3>Dunemark — Travel Journal Landing Page</h3>
+                  <span class="project-type-tag">Landing Page</span>
+                </div>
+                <p>
+                  A luxury editorial landing page for an offline-first expedition chronicle app. Built with semantic HTML5 and decoupled external CSS, featuring simulated iPhone voice waveforms, interactive mountain waypoint telemetry, 3D hardcover preview, and alpine audio synthesis.
+                </p>
+                <div class="project-tech-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>Vanilla JS</span>
+                  <span>Web Audio API</span>
+                  <span>Glassmorphism</span>
+                </div>
+                <div class="project-footer-actions">
+                  <a href="../WebDev-L1-LandingPage/index.html" target="_blank" rel="noopener noreferrer" class="project-action-btn live" id="dunemark-live-link" title="Open Dunemark Live Demo">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    <span>Live Demo</span>
+                  </a>
+                  <button class="project-action-btn view-details-btn" data-project="dunemark" type="button">
+                    <span>Details &amp; Modal</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                  </button>
+                  <div class="project-links-subgroup">
+                    <a href="https://github.com/bhanujonwar/OIBSIP/tree/main/WebDev-L1-LandingPage" target="_blank" rel="noopener noreferrer" class="project-action-btn gh" id="dunemark-github-link" title="View Task 1 GitHub Repository">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                      <span>GitHub</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card r" data-category="tool" data-project-id="thermocraft" style="--d: 0.2s">
+              <div class="project-banner">
+                <svg viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ThermoCraft project banner">
+                  <rect width="600" height="300" fill="#0d111d"/>
+                  <circle cx="300" cy="150" r="140" fill="url(#p3-glow)" opacity="0.3"/>
+                  <rect x="100" y="45" width="400" height="210" rx="16" fill="#161f30" stroke="rgba(139,92,246,0.35)" stroke-width="2"/>
+                  <circle cx="190" cy="150" r="38" fill="rgba(16,185,129,0.18)" stroke="#10b981" stroke-width="3"/>
+                  <text x="190" y="158" fill="#34d399" font-size="22" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" text-anchor="middle">°C</text>
+                  <circle cx="410" cy="150" r="38" fill="rgba(6,182,212,0.18)" stroke="#06b6d4" stroke-width="3"/>
+                  <text x="410" y="158" fill="#38bdf8" font-size="22" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" text-anchor="middle">°F</text>
+                  <line x1="240" y1="150" x2="360" y2="150" stroke="#8b5cf6" stroke-width="3.5" stroke-dasharray="6 5"/>
+                  <rect x="270" y="132" width="60" height="36" rx="10" fill="#201a3c" stroke="#8b5cf6"/>
+                  <text x="300" y="155" fill="#c084fc" font-size="16" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" text-anchor="middle">⇄</text>
+                  <defs>
+                    <radialGradient id="p3-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 150) scale(140)">
+                      <stop stop-color="#8b5cf6"/>
+                      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+                    </radialGradient>
+                  </defs>
+                </svg>
+                <div class="project-featured-badge badge-purple">
+                  <span>★</span> Oasis Level 1 • Task 3
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-header-row">
+                  <h3>ThermoCraft Pro — Temperature Converter</h3>
+                  <span class="project-type-tag">Interactive Tool</span>
+                </div>
+                <p>
+                  A real-time thermodynamic converter calculating precise values across Celsius (°C), Fahrenheit (°F), and Kelvin (K). Features live animated needle tracking on a thermal spectrum gradient (−50 °C to 150 °C), scientific benchmark presets, step-by-step formula derivations, and adjustment chips.
+                </p>
+                <div class="project-tech-tags">
+                  <span>Celsius / Fahrenheit / Kelvin</span>
+                  <span>Thermal Spectrum</span>
+                  <span>Mathematical Formulas</span>
+                  <span>Vanilla JS</span>
+                </div>
+                <div class="project-footer-actions">
+                  <a href="../WebDev-L1-TemperatureConverter/index.html" target="_blank" rel="noopener noreferrer" class="project-action-btn live" id="thermocraft-live-link" title="Open ThermoCraft Live Tool">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    <span>Live Demo</span>
+                  </a>
+                  <button class="project-action-btn view-details-btn" data-project="thermocraft" type="button">
+                    <span>Try Interactive Tool</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                  </button>
+                  <div class="project-links-subgroup">
+                    <a href="https://github.com/bhanujonwar/OIBSIP/tree/main/WebDev-L1-TemperatureConverter" target="_blank" rel="noopener noreferrer" class="project-action-btn gh" id="thermocraft-github-link" title="View Task 3 GitHub Repository">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                      <span>GitHub</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-section contact-section" id="contact">
+        <div class="container">
+          <div class="section-header r">
+            <span class="section-tag">Direct Communication</span>
+            <h2 class="section-title">Start a conversation or <span class="gradient-text">say hello</span>.</h2>
+            <p class="section-subtitle">
+              Have an internship opening, software engineering role, or freelance inquiry? Send a direct dispatch below.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info-panel r" style="--d: 0.1s">
+              <div class="contact-channels">
+                <div class="contact-card-item">
+                  <div class="contact-card-icon">✉️</div>
+                  <div class="contact-card-content">
+                    <span>Direct Email Address</span>
+                    <a href="mailto:bhanupratapjonwar@gmail.com" id="contact-email-link">bhanupratapjonwar@gmail.com</a>
+                  </div>
+                  <button class="channel-copy-btn" id="copy-channel-email-btn" type="button" title="Copy Email">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  </button>
+                </div>
+
+                <div class="contact-card-item">
+                  <div class="contact-card-icon">📞</div>
+                  <div class="contact-card-content">
+                    <span>Mobile Telephone</span>
+                    <a href="tel:+916263266817">+91 6263266817</a>
+                  </div>
+                  <a href="tel:+916263266817" class="channel-copy-btn" title="Call Mobile">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </a>
+                </div>
+
+                <div class="contact-card-item">
+                  <div class="contact-card-icon">💼</div>
+                  <div class="contact-card-content">
+                    <span>LinkedIn Professional Network</span>
+                    <a href="https://in.linkedin.com/in/bhanupratapjonwar" target="_blank" rel="noopener noreferrer">
+                      linkedin.com/in/bhanupratapjonwar
+                    </a>
+                  </div>
+                  <a href="https://in.linkedin.com/in/bhanupratapjonwar" target="_blank" rel="noopener noreferrer" class="channel-copy-btn" title="Visit Profile">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                  </a>
+                </div>
+
+                <div class="contact-card-item">
+                  <div class="contact-card-icon">🐙</div>
+                  <div class="contact-card-content">
+                    <span>GitHub Code Repositories</span>
+                    <a href="https://github.com/bhanujonwar" target="_blank" rel="noopener noreferrer">
+                      github.com/bhanujonwar
+                    </a>
+                  </div>
+                  <a href="https://github.com/bhanujonwar" target="_blank" rel="noopener noreferrer" class="channel-copy-btn" title="View Repos">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-highlights-card">
+                <div class="status-pill" style="align-self: flex-start;">
+                  <span class="pulse-dot"></span>
+                  <span>Response Time: Typically under 24 hours</span>
+                </div>
+                <p class="availability-note">
+                  Open for Software Engineering roles, Web Development internships, and technical collaboration.
+                </p>
+                <div class="contact-location-tag">
+                  <span>📍 H. No. 395, Singhal Basti, Morena (M.P.) 476001</span>
+                </div>
+              </div>
+
+              <div class="saved-messages-toggle-area">
+                <button class="btn btn-ghost-sm" id="toggle-inbox-history-btn" type="button">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                  <span>View Local Message History (<span id="inbox-count">0</span>)</span>
+                </button>
+                <div class="local-inbox-drawer" id="local-inbox-drawer" style="display: none;">
+                  <h4>Saved Messages (Local Browser Storage)</h4>
+                  <div id="local-inbox-list" class="local-inbox-list"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-panel r" style="--d: 0.2s">
+              <form class="contact-form" id="portfolio-contact-form" action="mailto:bhanupratapjonwar@gmail.com" method="POST" enctype="text/plain" novalidate>
+                <div class="form-header-meta">
+                  <h3>Direct Email Dispatch</h3>
+                  <p>Submitting this form prepares and triggers a direct message to bhanupratapjonwar@gmail.com with your preferred mail application.</p>
+                </div>
+
+                <div class="form-status" id="form-status-message" role="status" aria-live="polite"></div>
+
+                <div class="form-group">
+                  <label class="form-label" for="form-name">Your Full Name <span class="req">*</span></label>
+                  <input
+                    type="text"
+                    id="form-name"
+                    name="name"
+                    class="form-input"
+                    placeholder="e.g. Alex Sharma"
+                    required
+                    autocomplete="name"
+                  />
+                  <span class="field-error-msg" id="name-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="form-email">Email Address <span class="req">*</span></label>
+                  <input
+                    type="email"
+                    id="form-email"
+                    name="email"
+                    class="form-input"
+                    placeholder="alex@example.com"
+                    required
+                    autocomplete="email"
+                  />
+                  <span class="field-error-msg" id="email-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="form-subject">Subject Inquiry</label>
+                  <select id="form-subject" name="subject" class="form-select">
+                    <option value="Software Engineer / Developer Opportunity">Software Engineer / Developer Opportunity</option>
+                    <option value="Internship / Full-time Role">Internship / Full-time Role</option>
+                    <option value="Freelance Web Project">Freelance Web Project</option>
+                    <option value="General Hello &amp; Connect">General Hello &amp; Connect</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <div class="label-with-counter">
+                    <label class="form-label" for="form-message">Your Message <span class="req">*</span></label>
+                    <span class="char-counter" id="message-char-counter">0 / 1000</span>
+                  </div>
+                  <textarea
+                    id="form-message"
+                    name="message"
+                    class="form-textarea"
+                    placeholder="Tell me about your organization, role, project goals, timeline, or requirements..."
+                    maxlength="1000"
+                    required
+                  ></textarea>
+                  <span class="field-error-msg" id="message-error" aria-live="polite"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="form-submit-btn" style="width: 100%;">
+                  <span class="btn-text">Open Mail Client &amp; Send Message</span>
+                  <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <a class="brand-logo" href="#home">
+            <div class="brand-badge">BP</div>
+            <div class="brand-info">
+              <span class="brand-name">Bhanu Pratap Jonwar</span>
+              <span class="brand-role">Software Engineer &amp; Web Developer</span>
+            </div>
+          </a>
+
+          <ul class="footer-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Timeline</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="footer-social-strip">
+            <a href="https://github.com/bhanujonwar" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://in.linkedin.com/in/bhanupratapjonwar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="mailto:Bhanupratapjonwar@gmail.com" aria-label="Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+            <a href="tel:+916263266817" aria-label="Phone">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Bhanu Pratap Jonwar. Crafted with clean code and modern design principles.</p>
+          <div class="footer-badge-oasis">
+            <span class="oasis-sparkle">★</span>
+            <span>MCA • ITM University Gwalior</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      class="back-to-top-btn"
+      id="back-to-top"
+      type="button"
+      aria-label="Back to top of page"
+      title="Back to Top"
+    >
+      <svg class="progress-ring" width="52" height="52" viewBox="0 0 52 52">
+        <circle class="progress-ring-bg" cx="26" cy="26" r="23" fill="none" stroke-width="3"></circle>
+        <circle class="progress-ring-circle" id="scroll-ring-circle" cx="26" cy="26" r="23" fill="none" stroke-width="3"></circle>
+      </svg>
+      <svg class="arrow-up-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="12" y1="19" x2="12" y2="5"></line>
+        <polyline points="5 12 12 5 19 12"></polyline>
+      </svg>
+    </button>
+
+    <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+    <div class="modal-overlay" id="project-modal-overlay" aria-hidden="true">
+      <div class="modal-dialog" id="project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+        <div class="modal-header">
+          <div class="modal-title-group">
+            <span class="modal-project-tag" id="modal-project-tag">Category</span>
+            <h3 id="modal-project-title">Project Title</h3>
+          </div>
+          <button class="modal-close-btn" id="modal-close-btn" type="button" aria-label="Close dialog">&times;</button>
+        </div>
+
+        <div class="modal-body" id="modal-project-body"></div>
+
+        <div class="modal-footer" id="modal-project-footer">
+          <a href="https://github.com/bhanujonwar" target="_blank" rel="noopener noreferrer" class="btn btn-secondary-sm" id="modal-github-link">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            <span>GitHub Repository</span>
+          </a>
+          <button class="btn btn-primary-sm" id="modal-action-btn" type="button">
+            <span>Close Details</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="resume-modal-overlay" aria-hidden="true">
+      <div class="modal-dialog resume-modal-dialog" id="resume-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+        <div class="modal-header">
+          <div class="modal-title-group">
+            <span class="modal-project-tag">Official Curriculum Vitae</span>
+            <h3 id="resume-modal-title">Bhanu Pratap Jonwar — MCA Student &amp; Software Engineer</h3>
+          </div>
+          <button class="modal-close-btn" id="resume-modal-close-btn" type="button" aria-label="Close resume dialog">&times;</button>
+        </div>
+
+        <div class="modal-body resume-modal-body" id="resume-modal-content">
+          <div class="resume-sheet">
+            <div class="resume-sheet-header">
+              <div class="resume-name-block">
+                <h2>Bhanu Pratap Jonwar</h2>
+                <p class="resume-target-role">MCA – Computer Application | S/o: Hari Singh Jonwar</p>
+                <div class="resume-contacts">
+                  <span>📍 H. No. 395, Bharoshi wali gali, Nai aabadi, Singhal basti, Morena (M.P.) 476001</span>
+                  <span>✉️ Bhanupratapjonwar@gmail.com</span>
+                  <span>📞 +91 6263266817</span>
+                  <span>🌐 in/bhanupratapjonwar</span>
+                </div>
+              </div>
+              <div class="resume-photo-box">
+                <img src="assets/bhanu.png" alt="Bhanu Pratap Jonwar Photo" width="80" height="96" />
+              </div>
+            </div>
+
+            <div class="resume-section-divider"></div>
+
+            <div class="resume-block">
+              <h4 class="resume-section-heading">Career Objectives</h4>
+              <p>
+                I’m an MCA student aiming to build a career as a Software Engineer. While I spend plenty of time working with web technologies, databases, and networking, I’m also incredibly fascinated by Generative AI and where tech is heading. For me, it’s all about finding smart solutions to complex problems, and I’m ready to bring that mindset to a fast-paced dev team where I can listen, learn, and build.
+              </p>
+            </div>
+
+            <div class="resume-block">
+              <h4 class="resume-section-heading">Academic Credentials</h4>
+              <div class="resume-table-wrapper">
+                <table class="resume-table">
+                  <thead>
+                    <tr>
+                      <th>Examination</th>
+                      <th>Passing Year</th>
+                      <th>Percentage</th>
+                      <th>Institution</th>
+                      <th>Board / University</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>MCA</strong></td>
+                      <td>2027</td>
+                      <td><span class="badge-tag">Ongoing</span></td>
+                      <td>ITM University, Gwalior (M.P.)</td>
+                      <td>ITM University Gwalior</td>
+                    </tr>
+                    <tr>
+                      <td><strong>PGDCA</strong></td>
+                      <td>2025</td>
+                      <td>68.7 %</td>
+                      <td>Comtech Computer Institute, Morena</td>
+                      <td>Makhanlal Chaturvedi University, Bhopal (M.P.)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>B.Sc</strong></td>
+                      <td>2023</td>
+                      <td>66 %</td>
+                      <td>TSS College Morena (M.P.)</td>
+                      <td>Jiwaji University, Gwalior</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Class XII<sup>th</sup></strong></td>
+                      <td>2020</td>
+                      <td>67 %</td>
+                      <td>Variety Higher Secondry School, Morena</td>
+                      <td>Madhya Pradesh Board of Secondary Education</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Class X<sup>th</sup></strong></td>
+                      <td>2018</td>
+                      <td>63 %</td>
+                      <td>Swami High School, Morena</td>
+                      <td>Madhya Pradesh Board of Secondary Education</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="resume-block">
+              <h4 class="resume-section-heading">Work Experience</h4>
+              <div class="resume-experience-item">
+                <div class="exp-header">
+                  <strong>DMS &amp; Service Operations Executive</strong> — Morena Motors (Suzuki Motorcycle Showroom), Morena
+                  <span class="exp-date">April 2025 – September 2025</span>
+                </div>
+                <ul class="resume-bullets">
+                  <li>Managed workshop operations, job cards, and data entry using Suzuki Dealer Management System (DMS).</li>
+                  <li>Handled end-to-end accidental vehicle insurance claims and coordinated with surveyors for quick approvals.</li>
+                  <li>Processed accurate final billing for periodic services, repairs, and spare parts management.</li>
+                  <li>Evaluated and processed vehicle parts warranty claims according to Suzuki’s official policies.</li>
+                </ul>
+              </div>
+
+              <div class="resume-experience-item" style="margin-top: 1rem;">
+                <div class="exp-header">
+                  <strong>Web Development &amp; Designing Intern</strong> — OASIS INFOBYTE
+                  <span class="exp-date">Level 1 Tasks Suite</span>
+                </div>
+                <ul class="resume-bullets">
+                  <li>Engineered production-quality web projects strictly adhering to decoupled styling best practices.</li>
+                  <li>Delivered Level 1 Task 1: "Dunemark", a luxury editorial travel journal landing page.</li>
+                  <li>Delivered Level 1 Task 2: "Personal Portfolio", showcasing developer credentials and real assignments.</li>
+                  <li>Delivered Level 1 Task 3: "ThermoCraft Pro", an interactive multi-unit temperature converter (C/F/K).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="resume-block">
+              <h4 class="resume-section-heading">Skills</h4>
+              <p style="margin-bottom: 0.4rem;"><strong>Technical Skill:</strong> HTML5, CSS3, Database Management System (DBMS), Networking Fundamentals, Ms Office, Ms Excel, Team Work</p>
+              <p><strong>Soft Skill:</strong> Strong problem-solving and troubleshooting abilities, Time management and task prioritization skills.</p>
+            </div>
+
+            <div class="resume-block">
+              <h4 class="resume-section-heading">Certifications &amp; Achievements</h4>
+              <ul class="resume-bullets">
+                <li><strong>Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</strong> (Oracle University)</li>
+                <li><strong>10-week AI-ML Virtual Internship</strong> under AICTE, EduSkills &amp; Google for Developers (Jan–Mar 2026)</li>
+                <li><strong>Networking and Web Technology Course</strong> (Completed October 2025)</li>
+                <li><strong>Database Management System course (8 Weeks)</strong> through SWAYAM/NPTEL</li>
+              </ul>
+            </div>
+
+            <div class="resume-block">
+              <h4 class="resume-section-heading">Interests &amp; Hobbies</h4>
+              <p>Trekking, Cycling, Travelling, Poetry</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer resume-modal-footer">
+          <a href="assets/Bhanu_Pratap_Jonwar_Resume.pdf" download="Bhanu_Pratap_Jonwar_Resume.pdf" class="btn btn-primary-sm" id="modal-download-pdf-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Download Official Resume (PDF)</span>
+          </a>
+          <button class="btn btn-secondary-sm" id="print-resume-btn" type="button">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            <span>Print View</span>
+          </button>
+          <button class="btn btn-secondary-sm" id="copy-resume-link-btn" type="button">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Copy Link</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

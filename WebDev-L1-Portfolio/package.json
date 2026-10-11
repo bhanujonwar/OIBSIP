@@ -1,0 +1,22 @@
+{
+  "name": "bhanu-pratap-portfolio",
+  "version": "2.0.0",
+  "description": "Bhanu Pratap Jonwar — Personal Developer Portfolio (OASIS INFOBYTE Level 1 Task 2)",
+  "main": "dev.js",
+  "scripts": {
+    "dev": "node dev.js",
+    "start": "node dev.js",
+    "serve": "node dev.js",
+    "preview": "node dev.js"
+  },
+  "keywords": [
+    "portfolio",
+    "oasis-infobyte",
+    "task-2",
+    "web-developer",
+    "ui-designer",
+    "vanilla-js"
+  ],
+  "author": "Bhanu Pratap Jonwar <bhanupratapjonwar@gmail.com>",
+  "license": "MIT"
+}
