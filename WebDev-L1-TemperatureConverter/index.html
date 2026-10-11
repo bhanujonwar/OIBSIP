@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThermoCraft Pro — Complete Thermodynamic Lab & Temperature Suite | OASIS INFOBYTE Level 1 Task 3</title>
+  <meta name="description" content="State-of-the-art thermodynamic web suite featuring precision temperature conversion across Celsius, Fahrenheit, Kelvin, and Rankine, live physical gauge, specific heat energy lab, planetary climate benchmarks, and interactive comparison matrix. Built for OASIS INFOBYTE Level 1 Task 3 by Bhanu Pratap Jonwar.">
+  <meta name="author" content="Bhanu Pratap Jonwar">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌡️</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Navigation Bar -->
+  <header class="app-navbar" role="banner">
+    <div class="nav-container">
+      <div class="brand-wrapper">
+        <span class="brand-logo-icon" aria-hidden="true">🌡️</span>
+        <div class="brand-text">
+          <span class="brand-name">ThermoCraft <span class="brand-pro">PRO</span></span>
+          <span class="brand-sub">OASIS INFOBYTE · Level 1 Task 3</span>
+        </div>
+      </div>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#converterStudio" class="nav-link active"><span>Studio</span></a>
+        <a href="#presetsSection" class="nav-link"><span>Presets</span></a>
+        <a href="#thermalLabSection" class="nav-link"><span>Heat Lab</span></a>
+        <a href="#matrixSection" class="nav-link"><span>Matrix</span></a>
+        <a href="#historySection" class="nav-link"><span>History</span></a>
+      </nav>
+
+      <div class="nav-controls">
+        <!-- Audio Feedback Toggle -->
+        <button id="soundToggle" class="icon-toggle-btn" type="button" aria-label="Toggle sound effects" title="Audio effects">
+          <span id="soundIcon" aria-hidden="true">🔊</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="theme-toggle-btn" type="button" aria-label="Toggle dark and light theme" title="Toggle theme">
+          <span id="themeIcon" aria-hidden="true">☀️</span>
+          <span id="themeText">Light</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Master Wrapper -->
+  <div class="master-wrapper">
+
+    <!-- Hero Header & Global Live Stats -->
+    <header class="hero-header">
+      <div class="hero-badge-pill">
+        <span class="pulsing-dot"></span>
+        <span>Precision Thermodynamic &amp; Multi-Unit Scientific Lab</span>
+      </div>
+      <h1 class="hero-main-title">
+        The Ultimate <span class="gradient-text">Temperature Studio</span> &amp; Physics Suite
+      </h1>
+      <p class="hero-description">
+        Scientific conversion between Celsius, Fahrenheit, and Kelvin with absolute zero validation, real-time thermal spectrum needle, specific heat energy calculator, planetary benchmarks, and step-by-step arithmetic breakdown.
+      </p>
+
+      <!-- Key Thermodynamic Constants Ribbon -->
+      <div class="constants-ribbon" aria-label="Key Physics Constants">
+        <div class="constant-item" title="Lowest possible temperature in universe">
+          <span class="constant-label">Absolute Zero</span>
+          <span class="constant-value">0 K / −273.15 °C</span>
+        </div>
+        <div class="constant-item" title="Freezing point of water at 1 atm">
+          <span class="constant-label">Water Ice Point</span>
+          <span class="constant-value">0 °C / 32 °F</span>
+        </div>
+        <div class="constant-item" title="Healthy core human body temperature">
+          <span class="constant-label">Human Body</span>
+          <span class="constant-value">37 °C / 98.6 °F</span>
+        </div>
+        <div class="constant-item" title="Boiling point of water at sea level">
+          <span class="constant-label">Water Boiling</span>
+          <span class="constant-value">100 °C / 212 °F</span>
+        </div>
+        <div class="constant-item" title="Planck Temperature (Absolute Hot)">
+          <span class="constant-label">Planck Limit</span>
+          <span class="constant-value">1.417 × 10³² K</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION 1: PRIMARY CONVERTER STUDIO -->
+    <section class="studio-section" id="converterStudio" aria-label="Temperature Converter Studio">
+      <div class="studio-grid">
+
+        <!-- LEFT PANE: Converter Form & Simultaneous Outputs -->
+        <div class="glass-card main-converter-card" id="converterCard">
+          
+          <div class="card-section-header">
+            <div>
+              <span class="sub-badge">Core Engine</span>
+              <h2 class="card-title">Precision Converter</h2>
+            </div>
+            <div class="precision-picker">
+              <label for="precisionSelect">Decimals:</label>
+              <select id="precisionSelect" aria-label="Select output decimal precision">
+                <option value="0">0 (Integer)</option>
+                <option value="1">1 (e.g. 25.5)</option>
+                <option value="2" selected>2 (Standard)</option>
+                <option value="3">3 (High)</option>
+                <option value="4">4 (Scientific)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Unit Selector Tabs -->
+          <div class="unit-selector-container">
+            <span class="selector-heading" id="unitHeading">Convert From (Input Unit)</span>
+            <div class="unit-tabs-group" role="radiogroup" aria-labelledby="unitHeading">
+              <button type="button" class="unit-tab-btn active" id="tabCelsius" data-unit="celsius" role="radio" aria-checked="true">
+                <span class="tab-sym">°C</span>
+                <span class="tab-name">Celsius</span>
+              </button>
+              <button type="button" class="unit-tab-btn" id="tabFahrenheit" data-unit="fahrenheit" role="radio" aria-checked="false">
+                <span class="tab-sym">°F</span>
+                <span class="tab-name">Fahrenheit</span>
+              </button>
+              <button type="button" class="unit-tab-btn" id="tabKelvin" data-unit="kelvin" role="radio" aria-checked="false">
+                <span class="tab-sym">K</span>
+                <span class="tab-name">Kelvin</span>
+              </button>
+            </div>
+            <!-- Accessible Hidden Radios -->
+            <div class="sr-only">
+              <input type="radio" name="tempUnit" id="unitCelsius" value="celsius" checked>
+              <input type="radio" name="tempUnit" id="unitFahrenheit" value="fahrenheit">
+              <input type="radio" name="tempUnit" id="unitKelvin" value="kelvin">
+            </div>
+          </div>
+
+          <!-- Conversion Form -->
+          <form id="tempForm" class="converter-form" novalidate>
+            <div class="input-field-wrapper">
+              <label for="tempInput" class="input-top-label">
+                <span>Enter Temperature Value</span>
+                <span class="hint-text">Accepts positive or negative decimals</span>
+              </label>
+
+              <div class="main-input-bar" id="inputWrapper">
+                <input 
+                  type="text" 
+                  id="tempInput" 
+                  name="tempValue"
+                  class="primary-temp-input" 
+                  inputmode="decimal" 
+                  autocomplete="off" 
+                  spellcheck="false" 
+                  placeholder="e.g. 25 or -10.5" 
+                  aria-required="true"
+                  aria-invalid="false"
+                  aria-describedby="errorText"
+                >
+                <span class="active-unit-suffix" id="inputUnitTag">°C</span>
+                <div class="stepper-stack">
+                  <button type="button" id="stepUp" class="stepper-btn" aria-label="Increment by 1" title="Increment by 1">▲</button>
+                  <button type="button" id="stepDown" class="stepper-btn" aria-label="Decrement by 1" title="Decrement by 1">▼</button>
+                </div>
+              </div>
+
+              <!-- Quick Adjustment Chips -->
+              <div class="quick-chips-row" aria-label="Quick value adjustments">
+                <span class="chips-label">Quick Adjust:</span>
+                <button type="button" class="chip-btn" data-step="-50">−50</button>
+                <button type="button" class="chip-btn" data-step="-10">−10</button>
+                <button type="button" class="chip-btn" data-step="-1">−1</button>
+                <button type="button" class="chip-btn" data-step="1">+1</button>
+                <button type="button" class="chip-btn" data-step="10">+10</button>
+                <button type="button" class="chip-btn" data-step="50">+50</button>
+              </div>
+            </div>
+
+            <!-- Error Banner (role="alert") -->
+            <div id="errorBox" class="error-banner hidden" role="alert" aria-live="assertive">
+              <span class="error-alert-icon" aria-hidden="true">⚠️</span>
+              <span id="errorText"></span>
+            </div>
+
+            <!-- Form Action Buttons -->
+            <div class="action-buttons-grid">
+              <button type="submit" id="convertBtn" class="btn btn-convert">
+                <span class="btn-icon" aria-hidden="true">⚡</span>
+                <span>Convert Temperature</span>
+              </button>
+              <button type="button" id="swapUnitBtn" class="btn btn-swap" title="Cycle input scale (C → F → K)">
+                <span class="btn-icon" aria-hidden="true">⇄</span>
+                <span>Cycle Scale</span>
+              </button>
+              <button type="button" id="resetBtn" class="btn btn-reset" title="Reset all fields to clean initial state">
+                <span class="btn-icon" aria-hidden="true">↺</span>
+                <span>Reset</span>
+              </button>
+            </div>
+          </form>
+
+          <!-- Simultaneous Results Grid -->
+          <div class="results-showcase-container">
+            <div class="results-heading-bar">
+              <h3 class="results-title">Simultaneous Multi-Scale Results</h3>
+              <span class="results-tag">Live 3-Scale Computation</span>
+            </div>
+
+            <div class="simultaneous-results-grid" id="resultsGrid" aria-live="polite">
+              
+              <!-- Celsius Tile -->
+              <article class="result-tile source-active" id="cardCelsius" data-unit="celsius">
+                <div class="tile-header">
+                  <span class="tile-scale-name">Celsius</span>
+                  <span class="tile-source-pill" id="badgeCelsius">INPUT</span>
+                </div>
+                <div class="tile-value-block">
+                  <span class="tile-number" id="valCelsius">25</span>
+                  <span class="tile-unit">°C</span>
+                </div>
+                <button type="button" class="copy-tile-btn" id="copyCelsius" data-target="celsius" aria-label="Copy Celsius result">
+                  <span class="copy-icon" aria-hidden="true">📋</span>
+                  <span class="copy-text">Copy</span>
+                </button>
+              </article>
+
+              <!-- Fahrenheit Tile -->
+              <article class="result-tile" id="cardFahrenheit" data-unit="fahrenheit">
+                <div class="tile-header">
+                  <span class="tile-scale-name">Fahrenheit</span>
+                  <span class="tile-source-pill hidden" id="badgeFahrenheit">INPUT</span>
+                </div>
+                <div class="tile-value-block">
+                  <span class="tile-number" id="valFahrenheit">77</span>
+                  <span class="tile-unit">°F</span>
+                </div>
+                <button type="button" class="copy-tile-btn" id="copyFahrenheit" data-target="fahrenheit" aria-label="Copy Fahrenheit result">
+                  <span class="copy-icon" aria-hidden="true">📋</span>
+                  <span class="copy-text">Copy</span>
+                </button>
+              </article>
+
+              <!-- Kelvin Tile -->
+              <article class="result-tile" id="cardKelvin" data-unit="kelvin">
+                <div class="tile-header">
+                  <span class="tile-scale-name">Kelvin</span>
+                  <span class="tile-source-pill hidden" id="badgeKelvin">INPUT</span>
+                </div>
+                <div class="tile-value-block">
+                  <span class="tile-number" id="valKelvin">298.15</span>
+                  <span class="tile-unit">K</span>
+                </div>
+                <button type="button" class="copy-tile-btn" id="copyKelvin" data-target="kelvin" aria-label="Copy Kelvin result">
+                  <span class="copy-icon" aria-hidden="true">📋</span>
+                  <span class="copy-text">Copy</span>
+                </button>
+              </article>
+
+            </div>
+
+            <!-- Extended Scientific Scales Expandable -->
+            <div class="extended-scales-box">
+              <div class="extended-header">
+                <span class="extended-title">🔬 Advanced Scientific Thermodynamic Scales:</span>
+              </div>
+              <div class="extended-grid">
+                <div class="extended-item">
+                  <span class="ext-name">Rankine (°R):</span>
+                  <span class="ext-val" id="valRankine">536.67 °R</span>
+                </div>
+                <div class="extended-item">
+                  <span class="ext-name">Réaumur (°Ré):</span>
+                  <span class="ext-val" id="valReaumur">20.00 °Ré</span>
+                </div>
+                <div class="extended-item">
+                  <span class="ext-name">Triple Point Offset:</span>
+                  <span class="ext-val" id="valTriplePoint">+24.99 ΔK</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dynamic Thermal Gauge Visualizer -->
+            <div class="thermal-visualizer-panel" id="thermalVisualizer" aria-hidden="true">
+              <div class="gauge-state-header">
+                <span class="gauge-emoji" id="stateIcon">🌿</span>
+                <div class="gauge-text-group">
+                  <h4 class="gauge-title" id="stateLabel">Comfortable Ambient Climate</h4>
+                  <p class="gauge-sub" id="stateSub">Optimal indoor room comfort conditions (20–25 °C).</p>
+                </div>
+              </div>
+
+              <!-- Thermal Spectrum Gradient Bar with Moving Needle -->
+              <div class="spectrum-track-wrapper">
+                <div class="spectrum-bar">
+                  <div class="spectrum-needle" id="spectrumNeedle" style="left: 37.5%;">
+                    <div class="needle-glow"></div>
+                  </div>
+                </div>
+                <div class="spectrum-milestones">
+                  <span>−273.15°C (0 K)</span>
+                  <span>−50°C (Ice)</span>
+                  <span>0°C (Freeze)</span>
+                  <span>37°C (Body)</span>
+                  <span>100°C (Steam)</span>
+                  <span>500°C (Furnace)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step-by-Step Mathematical Calculation Breakdown -->
+            <div class="math-breakdown-card" id="breakdownBox">
+              <div class="math-card-header">
+                <span>🧮 Step-by-Step Mathematical Computation</span>
+              </div>
+              <div class="math-card-body" id="breakdownFormula">
+                • To Fahrenheit: <b>(25°C × 9/5) + 32 = 77 °F</b><br>
+                • To Kelvin: <b>25°C + 273.15 = 298.15 K</b>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- RIGHT PANE: Interactive Tools, Slider, Formulas & State Explorer -->
+        <aside class="studio-sidebar" aria-label="Interactive Tools and Reference">
+
+          <!-- Interactive Live Scale Scrubber Slider -->
+          <div class="glass-card side-card">
+            <div class="side-card-title">
+              <h3><span>🎚️</span> Interactive Scale Scrubber</h3>
+              <span class="slider-badge" id="sliderReadout">25 °C</span>
+            </div>
+            <p class="side-card-desc">Drag the interactive slider below to explore temperatures across physical ranges in real-time:</p>
+            <div class="slider-wrapper">
+              <div class="slider-range-labels">
+                <span>−50 °C (Deep Freeze)</span>
+                <span>150 °C (Steam)</span>
+              </div>
+              <input 
+                type="range" 
+                id="rangeSlider" 
+                class="scale-range-slider" 
+                min="-50" 
+                max="150" 
+                value="25" 
+                step="0.5"
+                aria-label="Interactive Temperature Slider"
+              >
+            </div>
+          </div>
+
+          <!-- Scientific Formulas Reference Sheet -->
+          <div class="glass-card side-card">
+            <div class="side-card-title">
+              <h3><span>📐</span> Standard Physics Formulas</h3>
+              <span class="sub-badge">Exact Math</span>
+            </div>
+            <div class="formula-cards-grid">
+              <div class="formula-card">
+                <span class="formula-pair">Celsius → Fahrenheit</span>
+                <span class="formula-code">°F = (°C × 9/5) + 32</span>
+              </div>
+              <div class="formula-card">
+                <span class="formula-pair">Fahrenheit → Celsius</span>
+                <span class="formula-code">°C = (°F − 32) × 5/9</span>
+              </div>
+              <div class="formula-card">
+                <span class="formula-pair">Celsius → Kelvin</span>
+                <span class="formula-code">K = °C + 273.15</span>
+              </div>
+              <div class="formula-card">
+                <span class="formula-pair">Kelvin → Celsius</span>
+                <span class="formula-code">°C = K − 273.15</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Physical State Transition Thresholds -->
+          <div class="glass-card side-card">
+            <div class="side-card-title">
+              <h3><span>🧊</span> Matter State Thresholds</h3>
+              <span class="sub-badge">Water @ 1 atm</span>
+            </div>
+            <div class="thresholds-list">
+              <div class="threshold-row">
+                <span class="th-dot freeze"></span>
+                <span class="th-name">Solid Ice Crystallization:</span>
+                <span class="th-val">≤ 0 °C (32 °F)</span>
+              </div>
+              <div class="threshold-row">
+                <span class="th-dot liquid"></span>
+                <span class="th-name">Liquid Water Phase:</span>
+                <span class="th-val">0 °C to 99.9 °C</span>
+              </div>
+              <div class="threshold-row">
+                <span class="th-dot boil"></span>
+                <span class="th-name">Vaporization / Boiling:</span>
+                <span class="th-val">≥ 100 °C (212 °F)</span>
+              </div>
+              <div class="threshold-row">
+                <span class="th-dot plasma"></span>
+                <span class="th-name">Ionized Plasma State:</span>
+                <span class="th-val">&gt; 10,000 °C</span>
+              </div>
+            </div>
+          </div>
+
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: 1-CLICK BENCHMARK REFERENCE PRESETS (EARTH & COSMIC) -->
+    <section class="suite-section" id="presetsSection" aria-label="Reference Presets">
+      <div class="section-heading-wrap">
+        <span class="section-tag">Interactive Benchmarks</span>
+        <h2 class="section-main-heading">Planetary &amp; Scientific Temperature Presets</h2>
+        <p class="section-sub-heading">Click any benchmark card below to instantly inject the temperature, recalculate the entire studio, and animate the thermal gauge:</p>
+      </div>
+
+      <div class="presets-large-grid">
+        
+        <!-- Cosmic / Physics -->
+        <button type="button" class="preset-large-card" data-val="-273.15" data-unit="celsius" title="Load Absolute Zero">
+          <div class="preset-head">
+            <span class="preset-large-icon">🌌</span>
+            <span class="preset-category">Cosmic Limit</span>
+          </div>
+          <h3 class="preset-title">Absolute Zero</h3>
+          <p class="preset-desc">Theoretical lower limit of entropy where molecular motion completely ceases.</p>
+          <div class="preset-tag-val">−273.15 °C · 0 K</div>
+        </button>
+
+        <!-- Liquid Nitrogen -->
+        <button type="button" class="preset-large-card" data-val="-196" data-unit="celsius" title="Load Liquid Nitrogen">
+          <div class="preset-head">
+            <span class="preset-large-icon">🧪</span>
+            <span class="preset-category">Cryogenics</span>
+          </div>
+          <h3 class="preset-title">Liquid Nitrogen</h3>
+          <p class="preset-desc">Standard industrial cryogenic coolant used in science and advanced medical freezing.</p>
+          <div class="preset-tag-val">−196 °C · 77.15 K</div>
+        </button>
+
+        <!-- Antarctica Record -->
+        <button type="button" class="preset-large-card" data-val="-89.2" data-unit="celsius" title="Load Vostok Antarctica Record">
+          <div class="preset-head">
+            <span class="preset-large-icon">❄️</span>
+            <span class="preset-category">Earth Cold Record</span>
+          </div>
+          <h3 class="preset-title">Vostok Station</h3>
+          <p class="preset-desc">Coldest naturally recorded ground temperature on Earth (Antarctica, July 1983).</p>
+          <div class="preset-tag-val">−89.2 °C · −128.6 °F</div>
+        </button>
+
+        <!-- Water Freezing -->
+        <button type="button" class="preset-large-card" data-val="0" data-unit="celsius" title="Load Water Freezing Point">
+          <div class="preset-head">
+            <span class="preset-large-icon">🧊</span>
+            <span class="preset-category">Phase Change</span>
+          </div>
+          <h3 class="preset-title">Water Freezing</h3>
+          <p class="preset-desc">Melting/freezing phase transition of pure water at 1 standard atmosphere.</p>
+          <div class="preset-tag-val">0 °C · 32 °F · 273.15 K</div>
+        </button>
+
+        <!-- Room Comfort -->
+        <button type="button" class="preset-large-card" data-val="22" data-unit="celsius" title="Load Standard Room Temp">
+          <div class="preset-head">
+            <span class="preset-large-icon">🏠</span>
+            <span class="preset-category">Habitability</span>
+          </div>
+          <h3 class="preset-title">Room Comfort</h3>
+          <p class="preset-desc">Standard indoor climate and laboratory test environment baseline.</p>
+          <div class="preset-tag-val">22 °C · 71.6 °F</div>
+        </button>
+
+        <!-- Human Core Body -->
+        <button type="button" class="preset-large-card" data-val="37" data-unit="celsius" title="Load Human Core Body Temp">
+          <div class="preset-head">
+            <span class="preset-large-icon">🩺</span>
+            <span class="preset-category">Biology</span>
+          </div>
+          <h3 class="preset-title">Human Core Body</h3>
+          <p class="preset-desc">Normal homeostasis core body temperature for healthy human beings.</p>
+          <div class="preset-tag-val">37 °C · 98.6 °F · 310.15 K</div>
+        </button>
+
+        <!-- Death Valley Record -->
+        <button type="button" class="preset-large-card" data-val="56.7" data-unit="celsius" title="Load Death Valley Heat Record">
+          <div class="preset-head">
+            <span class="preset-large-icon">🏜️</span>
+            <span class="preset-category">Earth Heat Record</span>
+          </div>
+          <h3 class="preset-title">Death Valley</h3>
+          <p class="preset-desc">Hottest air temperature reliably recorded on Earth (Furnace Creek, California).</p>
+          <div class="preset-tag-val">56.7 °C · 134 °F</div>
+        </button>
+
+        <!-- Water Boiling -->
+        <button type="button" class="preset-large-card" data-val="100" data-unit="celsius" title="Load Water Boiling Point">
+          <div class="preset-head">
+            <span class="preset-large-icon">♨️</span>
+            <span class="preset-category">Boiling Point</span>
+          </div>
+          <h3 class="preset-title">Water Boiling Point</h3>
+          <p class="preset-desc">Standard liquid-to-vapor boiling point of distilled water at sea-level pressure.</p>
+          <div class="preset-tag-val">100 °C · 212 °F · 373.15 K</div>
+        </button>
+
+        <!-- Surface of the Sun -->
+        <button type="button" class="preset-large-card" data-val="5500" data-unit="celsius" title="Load Sun Photosphere">
+          <div class="preset-head">
+            <span class="preset-large-icon">☀️</span>
+            <span class="preset-category">Astrophysics</span>
+          </div>
+          <h3 class="preset-title">Sun Photosphere</h3>
+          <p class="preset-desc">Effective surface temperature of our solar system's central star.</p>
+          <div class="preset-tag-val">5,500 °C · 9,932 °F</div>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: SPECIFIC HEAT & THERMAL ENERGY LAB (Q = mcΔT) -->
+    <section class="suite-section" id="thermalLabSection" aria-label="Thermal Energy Calculator Lab">
+      <div class="section-heading-wrap">
+        <span class="section-tag">Interactive Physics Lab</span>
+        <h2 class="section-main-heading">Specific Heat &amp; Thermal Energy Calculator</h2>
+        <p class="section-sub-heading">Calculate the exact energy required to heat different substances using the fundamental thermodynamic formula <b>Q = m · c · ΔT</b>:</p>
+      </div>
+
+      <div class="glass-card thermal-lab-card">
+        <div class="lab-controls-grid">
+          
+          <div class="lab-control-group">
+            <label for="substanceSelect" class="lab-label">Select Substance</label>
+            <select id="substanceSelect" class="lab-select">
+              <option value="4.184" selected>Water (Liquid) — 4.184 J/g°C</option>
+              <option value="0.900">Aluminum — 0.900 J/g°C</option>
+              <option value="0.450">Iron / Steel — 0.450 J/g°C</option>
+              <option value="0.385">Copper — 0.385 J/g°C</option>
+              <option value="0.129">Gold — 0.129 J/g°C</option>
+              <option value="2.440">Ethanol — 2.440 J/g°C</option>
+              <option value="2.090">Ice (−10°C) — 2.090 J/g°C</option>
+            </select>
+          </div>
+
+          <div class="lab-control-group">
+            <label for="massInput" class="lab-label">Mass (grams)</label>
+            <input type="number" id="massInput" class="lab-input" value="1000" min="1" step="10">
+          </div>
+
+          <div class="lab-control-group">
+            <label for="t1Input" class="lab-label">Initial Temp T₁ (°C)</label>
+            <input type="number" id="t1Input" class="lab-input" value="25" step="1">
+          </div>
+
+          <div class="lab-control-group">
+            <label for="t2Input" class="lab-label">Target Temp T₂ (°C)</label>
+            <input type="number" id="t2Input" class="lab-input" value="100" step="1">
+          </div>
+
+        </div>
+
+        <div class="lab-actions-row">
+          <button type="button" id="calcHeatBtn" class="btn btn-convert">
+            <span>⚡ Calculate Thermal Energy</span>
+          </button>
+          <button type="button" id="syncConverterHeatBtn" class="btn btn-swap" title="Use current temperature from the converter as Initial Temp">
+            <span>⇄ Pull Temp from Studio</span>
+          </button>
+        </div>
+
+        <!-- Energy Result Display -->
+        <div class="lab-results-display">
+          <div class="lab-stat-box">
+            <span class="stat-title">Temperature Delta (ΔT)</span>
+            <span class="stat-val" id="heatDeltaT">75 °C</span>
+          </div>
+          <div class="lab-stat-box primary-stat">
+            <span class="stat-title">Required Energy (Joules)</span>
+            <span class="stat-val" id="heatJoules">313,800 J</span>
+            <span class="stat-sub" id="heatKiloJoules">313.8 kJ</span>
+          </div>
+          <div class="lab-stat-box">
+            <span class="stat-title">Nutritional / Thermochemical</span>
+            <span class="stat-val" id="heatCalories">75,000 cal</span>
+            <span class="stat-sub" id="heatKcal">75.0 kcal</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: MULTI-SCALE COMPARISON MATRIX TABLE -->
+    <section class="suite-section" id="matrixSection" aria-label="Comparison Matrix">
+      <div class="section-heading-wrap">
+        <span class="section-tag">Thermodynamic Reference</span>
+        <h2 class="section-main-heading">Unified Multi-Scale Comparison Matrix</h2>
+        <p class="section-sub-heading">Live comparison across all scientific scales with physical state descriptions:</p>
+      </div>
+
+      <div class="glass-card table-glass-card">
+        <div class="table-responsive-wrapper">
+          <table class="matrix-table" id="matrixTable">
+            <thead>
+              <tr>
+                <th>Physical Landmark</th>
+                <th>Celsius (°C)</th>
+                <th>Fahrenheit (°F)</th>
+                <th>Kelvin (K)</th>
+                <th>Rankine (°R)</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="matrixTableBody">
+              <!-- Dynamically populated rows with live highlighting -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CONVERSION HISTORY & LOG AUDIT -->
+    <section class="suite-section" id="historySection" aria-label="Conversion History">
+      <div class="section-heading-wrap">
+        <span class="section-tag">Audit Trail</span>
+        <h2 class="section-main-heading">Recent Conversions &amp; Data Export</h2>
+        <p class="section-sub-heading">Review, re-run, or export your recent thermodynamic conversions:</p>
+      </div>
+
+      <div class="glass-card history-glass-card">
+        <div class="history-card-header">
+          <h3 class="history-title">Session Conversion Log</h3>
+          <div class="history-actions-group">
+            <button type="button" class="history-tool-btn" id="exportHistoryBtn" title="Export conversion history as CSV file">
+              <span>📥 Export CSV</span>
+            </button>
+            <button type="button" class="history-tool-btn danger" id="clearHistoryBtn" title="Clear all stored conversions">
+              <span>🗑️ Clear History</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="history-container" id="historyList">
+          <!-- Injected dynamically by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Master Footer -->
+    <footer class="app-master-footer" role="contentinfo">
+      <div class="footer-top-grid">
+        
+        <div class="footer-col brand-col">
+          <div class="footer-brand-title">
+            <span>🌡️</span>
+            <span>ThermoCraft PRO</span>
+          </div>
+          <p class="footer-brand-desc">
+            An advanced, fully working thermodynamic laboratory and temperature conversion suite built strictly using pure web standards (HTML5, CSS3, vanilla JavaScript).
+          </p>
+          <div class="standards-tags">
+            <span class="std-tag">HTML5 Semantic</span>
+            <span class="std-tag">Vanilla CSS3</span>
+            <span class="std-tag">Pure JS ES6+</span>
+            <span class="std-tag">WCAG AA Compliant</span>
+            <span class="std-tag">Zero Packages</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Internship Project</h4>
+          <p class="footer-info-text">
+            <strong>OASIS INFOBYTE Internship</strong><br>
+            Web Development &amp; Designing<br>
+            Level 1 · Task 3: Temperature Converter Website
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Developer Profile</h4>
+          <p class="footer-info-text">
+            <strong>Bhanu Pratap Jonwar</strong><br>
+            Master of Computer Applications (MCA)<br>
+            ITM University<br>
+            <span class="footer-subtext">Specialized in High-Performance Frontend &amp; Web Systems</span>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>© 2026 ThermoCraft Pro · Developed by Bhanu Pratap Jonwar · All Rights Reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Live Toast Notification Alert -->
+  <div id="toastMessage" class="toast-notification hidden" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
